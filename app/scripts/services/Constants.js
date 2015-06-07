@@ -4,7 +4,7 @@
  * @ngdoc function
  * @name T6SLiveVideoClientApp.service:CONSTANTS
  * @description
- * # BCONSTANTS
+ * # CONSTANTS
  * Service of the T6SLiveVideoClientApp
  */
 angular.module('T6SLiveVideoClientApp')

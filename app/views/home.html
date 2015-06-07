@@ -1,7 +1,13 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>HOME PAGE hey!</h1>
-    <p>I need You!</p>
-    <p>====> SIGN UP!!! <====</p>
+<div id="localVideo"></div>
+<div class="row">
+  <div class="col-md-12">
+    {{videoDevices}}
+    <h4>{{ 'HOME.CHOOSE_VIDEO_DEVICE' | translate }}</h4>
+    <div class="list-group" ng-repeat="vDevice in videoDevices">
+      <a class="btn list-group-item" ng-class="{'active' : selectedVideoDevice.id == vDevice.id }" ng-click="connectToLive(vDevice)">
+        <h4 class="list-group-item-heading">{{ vDevice.label }}</h4>
+        <p class="list-group-item-text">{{ vDevice.label }}</p>
+      </a>
+    </div>
   </div>
 </div>
